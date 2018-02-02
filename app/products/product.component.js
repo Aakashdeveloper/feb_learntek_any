@@ -11,6 +11,7 @@ var ProductComponent = /** @class */ (function () {
     function ProductComponent() {
         this.title = "****Product List*****";
         this.showImage = false;
+        this.imageWidth = 50;
         this.products = [
             {
                 "productId": 1,
@@ -31,16 +32,31 @@ var ProductComponent = /** @class */ (function () {
                 "price": 32.99,
                 "starRating": 4.2,
                 "imageUrl": "http://openclipart.org/image/300px/svg_to_png/58471/garden_cart.png"
+            },
+            {
+                "productId": 1,
+                "productName": "Leaf Rake",
+                "productCode": "GDN-0011",
+                "releaseDate": "March 19, 2016",
+                "description": "Leaf rake with 48-inch wooden handle.",
+                "price": 19.95,
+                "starRating": 3.2,
+                "imageUrl": "http://openclipart.org/image/300px/svg_to_png/26215/Anonymous_Leaf_Rake.png"
             }
         ];
     }
     ProductComponent.prototype.toggleImage = function () {
         this.showImage = !this.showImage;
     };
+    ProductComponent.prototype.ngOnInit = function () {
+        console.log(">>>>>>>>>>>>>>>>>>this is first<<<<<<<<<<<<");
+    };
     ProductComponent = __decorate([
         core_1.Component({
             selector: 'learn-product',
-            templateUrl: 'app/products/product.component.html'
+            templateUrl: 'app/products/product.component.html',
+            //styles:['thead{color:green;}']
+            styleUrls: ['app/products/product.component.css']
         })
     ], ProductComponent);
     return ProductComponent;

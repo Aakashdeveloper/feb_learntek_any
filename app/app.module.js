@@ -12,6 +12,7 @@ var forms_1 = require("@angular/forms");
 var app_component_1 = require("./app.component");
 var mobile_component_1 = require("./mobile.component");
 var product_component_1 = require("./products/product.component");
+var product_filter_pipe_1 = require("./products/product-filter.pipe");
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
@@ -24,7 +25,8 @@ var AppModule = /** @class */ (function () {
             declarations: [
                 app_component_1.AppComponent,
                 mobile_component_1.MobileComponent,
-                product_component_1.ProductComponent
+                product_component_1.ProductComponent,
+                product_filter_pipe_1.ProductFilter
             ],
             bootstrap: [
                 app_component_1.AppComponent
