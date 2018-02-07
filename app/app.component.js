@@ -13,7 +13,7 @@ var AppComponent = /** @class */ (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: 'app-main',
-            template: "\n        <div>\n            <h1>This is main Page</h1>\n            <learn-product></learn-product>\n            <mobile-aakash></mobile-aakash>\n        </div>\n    "
+            template: "\n        <div>\n            <nav class=\"navbar navbar-inverse\">\n                <div class=\"container-fluid\">\n                    <a class=\"navbar-brand\">LearnTek</a>\n                    <ul class=\"nav navbar-nav\">\n                        <li><a [routerLink]=\"['/home']\">Home</a></li>\n                        <li><a [routerLink]=\"['/products']\">Products</a></li>\n                        <li><a [routerLink]=\"['/orders']\">orders</a></li>\n                    </ul>\n                </div>\n            </nav>\n            <div class=\"container\">\n                <router-outlet></router-outlet>\n            </div>\n        </div>\n    "
         })
     ], AppComponent);
     return AppComponent;
