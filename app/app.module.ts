@@ -13,6 +13,7 @@ import { ProductDetailComponent } from './products/product-detail.component';
 import { NotFoundComponent } from './notfound.component';
 import { OrderComponent } from './orders/order.component';
 import { HomeComponent } from './home/home.component';
+import { StarComponent } from './shared/star.component';
 
 @NgModule({
     imports:[
@@ -38,7 +39,8 @@ import { HomeComponent } from './home/home.component';
         ProductDetailComponent,
         NotFoundComponent,
         OrderComponent,
-        HomeComponent
+        HomeComponent,
+        StarComponent
     ],
     bootstrap:[
         AppComponent

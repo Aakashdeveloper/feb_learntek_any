@@ -26,6 +26,9 @@ var ProductComponent = /** @class */ (function () {
         this._productService.getProducts()
             .subscribe(function (products) { return _this.products = products; }, function (error) { return _this.errorMessage = error; });
     };
+    ProductComponent.prototype.onRatingClicked = function (message) {
+        this.title = "Product List::" + message;
+    };
     ProductComponent = __decorate([
         core_1.Component({
             selector: 'learn-product',

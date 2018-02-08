@@ -20,6 +20,7 @@ var product_detail_component_1 = require("./products/product-detail.component");
 var notfound_component_1 = require("./notfound.component");
 var order_component_1 = require("./orders/order.component");
 var home_component_1 = require("./home/home.component");
+var star_component_1 = require("./shared/star.component");
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
@@ -46,7 +47,8 @@ var AppModule = /** @class */ (function () {
                 product_detail_component_1.ProductDetailComponent,
                 notfound_component_1.NotFoundComponent,
                 order_component_1.OrderComponent,
-                home_component_1.HomeComponent
+                home_component_1.HomeComponent,
+                star_component_1.StarComponent
             ],
             bootstrap: [
                 app_component_1.AppComponent
